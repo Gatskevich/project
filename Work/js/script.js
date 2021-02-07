@@ -55,19 +55,42 @@
 // const user = "Ivan";
 // alert(`Привет, ${user}`);
 
-console.log('arr' + "- object");
-console.log(4 + +"5");
+// console.log('arr' + "- object");
+// console.log(4 + +"5");
 
-let incr = 10,
-    decr = 10;
+// let incr = 10,
+//     decr = 10;
 
 // ++incr;
 // --decr;
 
-console.log(++incr);
-console.log(--decr);
+// console.log(++incr);
+// console.log(--decr);
 
-console.log(5%2);
+// console.log(5%2);
 
-console.log(2*4==='8');
+// console.log(2+2*4==='8');
+
+// const isChecked = true,
+//       isClousee = false;
+// console.log(isChecked &&  !isClousee);
+const numberOfFilms = prompt("Сколько фильмов вы уже посмотрели?", "");
+const personalDatabase = {
+    count: numberOfFilms,
+    movies:{},
+    actors: {},
+    genres: [],
+    private: false
+
+};
+const number1 = prompt("Один из просмотренных фильмов?", ""),
+      number2 = prompt("На сколько оцените его?", ""),
+      number3 = prompt("Один из просмотренных фильмов?", ""),
+      number4 = prompt("На сколько оцените его?", "");
+
+personalDatabase.movies[number1] = number2; 
+personalDatabase.movies[number3] = number4; 
+
+console.log(personalDatabase);
+
 
